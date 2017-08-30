@@ -4,4 +4,5 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    device/xperience/sepolicy/qcom
+    device/xperience/sepolicy/qcom \
+    device/xperience/sepolicy/qcom/$(TARGET_BOARD_PLATFORM)
