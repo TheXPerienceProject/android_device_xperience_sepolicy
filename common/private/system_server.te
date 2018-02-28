@@ -16,3 +16,7 @@ set_prop(system_server, xtra_control_prop)
 
 # Freeform
 add_service(system_server, lmo_freeform_service);
+
+allow system_server pocket_service:service_manager { add find };
+allow system_server pocket_judge_sysfs:dir search;
+allow system_server pocket_judge_sysfs:file rw_file_perms;
