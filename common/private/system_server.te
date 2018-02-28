@@ -19,3 +19,8 @@ add_service(system_server, lmo_freeform_service);
 
 #XPerience optimizer
 add_service(system_server, xperience_optimizer_service)
+
+# pocket
+allow system_server pocket_service:service_manager { add find };
+allow system_server pocket_judge_sysfs:dir search;
+allow system_server pocket_judge_sysfs:file rw_file_perms;
