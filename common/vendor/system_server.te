@@ -1,4 +1,1 @@
 allow system_server hal_lineage_power_hwservice:hwservice_manager find;
-
-#pocket judge
-allow system_server pocket_service:service_manager { add find };
