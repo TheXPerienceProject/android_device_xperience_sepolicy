@@ -13,3 +13,7 @@ recovery_only(`
   allow vold rootfs:dir { add_name write };
   allow vold rootfs:file execute_no_trans;
 ')
+
+allow vold unlabeled:filesystem { mount unmount };
+allow vold unlabeled:dir rw_dir_perms;
+allow vold unlabeled:file rw_file_perms;
