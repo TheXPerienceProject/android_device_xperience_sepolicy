@@ -1,0 +1,2 @@
+#allow the system to read /system/etc/sysconfig/google.xml
+allow radio unlabeled:file r_file_perms;
