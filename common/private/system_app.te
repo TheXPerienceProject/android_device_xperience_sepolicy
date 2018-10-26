@@ -31,3 +31,6 @@ get_prop(system_app, xperience_info_prop)
 
 # Compact HUN
 allow system_app system_prop:property_service set;
+
+# Read selinux status
+allow system_app selinuxfs:file r_file_perms;
