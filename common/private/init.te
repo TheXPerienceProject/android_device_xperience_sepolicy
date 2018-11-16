@@ -1,2 +1,5 @@
 allow init sysfs:file { w_file_perms setattr };
 allow init sysfs_dm:file { w_file_perms setattr };
+
+#I/O Schedule
+allow init sysfs_io_sched_tuneable:file { setattr w_file_perms };
