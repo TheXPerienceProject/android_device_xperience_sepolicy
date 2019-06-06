@@ -1,0 +1,9 @@
+vendor.xperience.livedisplay::IAdaptiveBacklight       u:object_r:hal_lineage_livedisplay_hwservice:s0
+vendor.xperience.livedisplay::IAutoContrast            u:object_r:hal_lineage_livedisplay_hwservice:s0
+vendor.xperience.livedisplay::IColorBalance            u:object_r:hal_lineage_livedisplay_hwservice:s0
+vendor.xperience.livedisplay::IColorEnhancement        u:object_r:hal_lineage_livedisplay_hwservice:s0
+vendor.xperience.livedisplay::IDisplayColorCalibration u:object_r:hal_lineage_livedisplay_hwservice:s0
+vendor.xperience.livedisplay::IDisplayModes            u:object_r:hal_lineage_livedisplay_hwservice:s0
+vendor.xperience.livedisplay::IPictureAdjustment       u:object_r:hal_lineage_livedisplay_hwservice:s0
+vendor.xperience.livedisplay::IReadingEnhancement      u:object_r:hal_lineage_livedisplay_hwservice:s0
+vendor.xperience.livedisplay::ISunlightEnhancement     u:object_r:hal_lineage_livedisplay_hwservice:s0
