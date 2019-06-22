@@ -1,0 +1,2 @@
+# allow to our system to search theme_data
+allow untrusted_app theme_data_file:dir search;
