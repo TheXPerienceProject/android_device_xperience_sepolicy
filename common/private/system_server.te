@@ -4,3 +4,6 @@ allow system_server media_rw_data_file:file r_file_perms;
 allow system_server pocket_judge_sysfs:dir search;
 allow system_server pocket_judge_sysfs:file rw_file_perms;
 allow system_server pocket_service:service_manager { add find };
+
+# OTA with encrypted/unencrypted f2fs
+allow system_server ota_package_file:dir { getattr search };
