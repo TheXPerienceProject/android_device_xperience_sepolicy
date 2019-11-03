@@ -1,2 +1,5 @@
 type longshot_service, system_api_service, system_server_service, service_manager_type;
 type pocket_service, system_api_service, system_server_service, service_manager_type;
+
+adbroot_service                           u:object_r:adbroot_service:s0
+
