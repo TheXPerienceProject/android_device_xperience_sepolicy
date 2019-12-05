@@ -22,5 +22,8 @@
 # Sysinit
 /system/bin/sysinit                     u:object_r:sysinit_exec:s0
 
+# HALs
+/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.power@1\.2-service    u:object_r:hal_power_default_exec:s0
+
 # Pocket judge
 /sys/kernel/pocket_judge(/.*)?	u:object_r:pocket_judge_sysfs:s0
