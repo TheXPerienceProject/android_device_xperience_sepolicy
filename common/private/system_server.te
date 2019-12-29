@@ -7,3 +7,6 @@ allow system_server pocket_service:service_manager { add find };
 
 # OTA with encrypted/unencrypted f2fs
 allow system_server ota_package_file:dir { getattr search };
+
+# Use HALs
+hal_client_domain(system_server, hal_xpe_fod)
