@@ -1,2 +1,2 @@
-vendor.xpe.camera.motor::ICameraMotor            u:object_r:hal_xpe_camera_motor_hwservice:s0
-vendor.xpe.biometrics.fingerprint.inscreen::IFingerprintInscreen    u:object_r:hal_xpe_fod_hwservice:s0
+vendor.xperience.camera.motor::ICameraMotor            u:object_r:hal_xpe_camera_motor_hwservice:s0
+vendor.xperience.biometrics.fingerprint.inscreen::IFingerprintInscreen    u:object_r:hal_xpe_fod_hwservice:s0
