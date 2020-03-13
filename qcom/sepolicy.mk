@@ -12,7 +12,11 @@ endif
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/xperience/sepolicy/qcom/private
 
-ifneq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
+ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/xperience/sepolicy/qcom/dynamic \
+    device/xperience/sepolicy/qcom/system-only
+else
 BOARD_SEPOLICY_DIRS += \
     device/xperience/sepolicy/qcom/vendor
 endif
