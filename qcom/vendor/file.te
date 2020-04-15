@@ -1,4 +1,2 @@
-type debugfs_rpm, debugfs_type, fs_type;
-
 #Sysfs Kcal
 type sysfs_kcal, fs_type, sysfs_type;
