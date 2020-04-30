@@ -29,3 +29,6 @@ allow system_server zygote_tmpfs:file rw_file_perms;
 
 # Lineage
 hal_client_domain(system_server, hal_lineage_health)
+
+# App Lock
+add_service(system_server, applock_service);
