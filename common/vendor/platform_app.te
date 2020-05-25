@@ -1,0 +1,5 @@
+# To fix the show battery status in QS from rainbow unicorn settings
+allow platform_app sysfs_battery_supply:dir r_dir_perms;
+allow platform_app sysfs_battery_supply:file r_file_perms;
+allow platform_app sysfs_kgsl:dir r_dir_perms;
+allow platform_app sysfs_kgsl:file r_file_perms;
