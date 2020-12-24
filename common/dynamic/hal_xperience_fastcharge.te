@@ -1,0 +1,9 @@
+# HWBinder IPC from client to server
+binder_call(hal_xperience_fastcharge_client, hal_xperience_fastcharge_server)
+
+add_hwservice(hal_xperience_fastcharge_server, hal_xperience_fastcharge_hwservice)
+allow hal_xperience_fastcharge_client hal_xperience_fastcharge_hwservice:hwservice_manager find;
+
+# Allow binder communication with platform_app
+binder_call(hal_xperience_fastcharge, platform_app)
+

@@ -1,4 +1,5 @@
 # HALs
 hal_attribute_xpe(xpe_camera_motor)
+hal_attribute_xpe(xperience_fastcharge)
 hal_attribute_xpe(xpe_fod)
 hal_attribute_xpe(xperience_touch)

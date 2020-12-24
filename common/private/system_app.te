@@ -5,4 +5,4 @@ allow system_app selinuxfs:file r_file_perms;
 get_prop(system_app, vendor_security_patch_level_prop)
 
 hal_client_domain(system_app, hal_xperience_touch)
-
+hal_client_domain(system_app, hal_xperience_fastcharge)
