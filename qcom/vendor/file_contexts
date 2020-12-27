@@ -1,5 +1,5 @@
 #scripts
-/(vendor|system/vendor)/bin/init\.xperience\.postboot\.sh   u:object_r:qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/init\.xperience\.postboot\.sh   u:object_r:vendor_qti_init_shell_exec:s0
 
 # Cryptfshw HAL
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.cryptfshw@1\.0-service-dlsym-qti       u:object_r:hal_keymaster_qti_exec:s0
