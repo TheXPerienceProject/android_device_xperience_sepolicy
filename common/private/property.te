@@ -1,3 +1,5 @@
 type adbtcp_prop, property_type;
 type recovery_prop, property_type;
 type userinit_prop, property_type;
+type recovery_update_prop, property_type, extended_core_property_type;
+
