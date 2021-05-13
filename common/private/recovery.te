@@ -52,8 +52,6 @@ allow recovery sysfs_batteryinfo:dir search;
 r_dir_file(recovery, unencrypted_data_file)
 
 # setenforce
-userdebug_or_eng(`
 permissive recovery;
-')
 #for recoveryonly
 ')
