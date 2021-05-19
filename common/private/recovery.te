@@ -31,11 +31,6 @@ set_prop(recovery, system_radio_prop)
 allow recovery self:process setexec;
 domain_trans(recovery, otapreopt_chroot_exec, backuptool)
 
-# Some addons require this for A/B installation compatibility
-userdebug_or_eng(`
-allow recovery system_file:dir mounton;
-')
-
 # Volume manager
 allow recovery block_device:dir create_dir_perms;
 allow recovery block_device:blk_file { create rw_file_perms };
@@ -52,8 +47,7 @@ allow recovery sysfs_batteryinfo:dir search;
 r_dir_file(recovery, unencrypted_data_file)
 
 # setenforce
-userdebug_or_eng(`
 permissive recovery;
-')
+
 #for recoveryonly
 ')
