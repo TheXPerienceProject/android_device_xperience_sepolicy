@@ -1,6 +1,7 @@
 vendor.xperience.camera.motor::ICameraMotor            u:object_r:hal_xpe_camera_motor_hwservice:s0
 vendor.xperience.biometrics.fingerprint.inscreen::IFingerprintInscreen    u:object_r:hal_xpe_fod_hwservice:s0
 vendor.xperience.touch::IGloveMode                                        u:object_r:hal_xperience_touch_hwservice:s0
+vendor.xperience.touch::IHighTouchPollingRate                             u:object_r:hal_xperience_touch_hwservice:s0
 vendor.xperience.touch::IKeyDisabler                                      u:object_r:hal_xperience_touch_hwservice:s0
 vendor.xperience.touch::IStylusMode                                       u:object_r:hal_xperience_touch_hwservice:s0
 vendor.xperience.touch::ITouchscreenGesture                               u:object_r:hal_xperience_touch_hwservice:s0
