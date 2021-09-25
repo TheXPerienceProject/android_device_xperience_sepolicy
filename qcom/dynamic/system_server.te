@@ -1,1 +1,4 @@
 allow system_server sysfs_battery_supply:file rw_file_perms;
+
+#Fast charger mode
+allow system_server vendor_sysfs_battery_supply:file { open read };

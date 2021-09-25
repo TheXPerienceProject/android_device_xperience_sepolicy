@@ -1,0 +1,2 @@
+# sysfs io file type for sysfs access
+type sysfs_io_sched_tuneable, sysfs_type, fs_type;
