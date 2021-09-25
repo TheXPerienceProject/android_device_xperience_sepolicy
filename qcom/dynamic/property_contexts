@@ -1,3 +1,22 @@
 # Audio
 audio.                            u:object_r:audio_prop:s0
 persist.speaker.                  u:object_r:audio_prop:s0
+
+# custom xperience 
+# post boot properties
+debug.sf.enable_gl_backpressure                u:object_r:vendor_mpctl_prop:s0
+debug.sf.earlyGl.app.duration                u:object_r:vendor_mpctl_prop:s0
+debug.sf.earlyGl.sf.duration                u:object_r:vendor_mpctl_prop:s0
+debug.sf.early.app.duration                u:object_r:vendor_mpctl_prop:s0
+debug.sf.early.sf.duration                u:object_r:vendor_mpctl_prop:s0
+debug.sf.late.app.duration                u:object_r:vendor_mpctl_prop:s0
+debug.sf.late.sf.duration                u:object_r:vendor_mpctl_prop:s0
+debug.sf.use_phase_offsets_as_durations                u:object_r:vendor_mpctl_prop:s0
+persist.klozz.yukiperf.optimization                u:object_r:vendor_mpctl_prop:s0
+persist.performance.optimization.set.to                u:object_r:vendor_mpctl_prop:s0
+ro.lmk.psi_partial_stall_ms                u:object_r:vendor_mpctl_prop:s0
+ro.use_psi                u:object_r:vendor_mpctl_prop:s0
+ro.lmk.debug                u:object_r:vendor_mpctl_prop:s0
+ro.xperience.kernel.uses.lmkd                u:object_r:vendor_mpctl_prop:s0
+vendor.xperience.post_boot.parsed                u:object_r:vendor_mpctl_prop:s0
+vendor.xperience.easkernelversion                u:object_r:vendor_mpctl_prop:s0
