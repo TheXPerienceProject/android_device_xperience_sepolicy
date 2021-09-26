@@ -1,2 +1,4 @@
 #Sysfs Kcal
 type sysfs_kcal, fs_type, sysfs_type;
+
+type sysfs_io_sched_tuneable, fs_type, sysfs_type;
