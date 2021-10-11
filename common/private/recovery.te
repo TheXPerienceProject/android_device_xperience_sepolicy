@@ -33,8 +33,8 @@ domain_trans(recovery, otapreopt_chroot_exec, backuptool)
 
 # Volume manager
 allow recovery block_device:dir create_dir_perms;
-allow recovery block_device:blk_file { create rw_file_perms };
-allow recovery self:capability mknod;
+allow recovery block_device:blk_file { create unlink rw_file_perms };
+allow recovery self:capability fsetid;
 allow recovery proc_filesystems:file r_file_perms;
 allow recovery self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 allow recovery sysfs:file w_file_perms; # writing to /sys/*/uevent during coldboot.
@@ -42,6 +42,8 @@ allow recovery tmpfs:file link;
 
 # Read battery percentage
 allow recovery sysfs_batteryinfo:dir search;
+allow recovery rootfs:dir w_dir_perms;
+allow recovery media_rw_data_file:dir r_dir_perms;
 
 # Read fbe encryption info
 r_dir_file(recovery, unencrypted_data_file)
