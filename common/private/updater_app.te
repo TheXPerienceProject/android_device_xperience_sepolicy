@@ -27,5 +27,3 @@ allow updater_app system_data_file:dir { read };
 get_prop(updater_app, default_prop)
 get_prop(updater_app, build_prop)
 
-set_prop(updater_app, recovery_update_prop)
-
