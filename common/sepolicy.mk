@@ -18,11 +18,11 @@ endif
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/public
 
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/dynamic \
     device/xperience/sepolicy/common/system
 else
