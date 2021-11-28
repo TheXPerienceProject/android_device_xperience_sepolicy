@@ -12,3 +12,6 @@ hal_client_domain(system_server, hal_xpe_fod)
 hal_client_domain(system_server, hal_xperience_touch)
 
 add_service(system_server, longshot_service)
+
+# Let system server find auxiliary camera properties
+get_prop(system_server, vendor_persist_camera_prop)
