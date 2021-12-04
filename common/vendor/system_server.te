@@ -1,1 +1,4 @@
 allow system_server hal_xperience_power_hwservice:hwservice_manager find;
+
+# Allow to read fast charge nodes
+allow system_server vendor_sysfs_battery_supply:file r_file_perms;
