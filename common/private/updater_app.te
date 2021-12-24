@@ -24,6 +24,8 @@ allow updater_app ota_package_file:file create_file_perms;
 
 allow updater_app system_data_file:dir { read };
 
+allow updater_app vendor_dpmtcm_socket:sock_file write;
+
 get_prop(updater_app, default_prop)
 get_prop(updater_app, build_prop)
 
