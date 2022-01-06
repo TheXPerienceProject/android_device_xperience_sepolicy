@@ -1,3 +1,7 @@
+# ADB Root
+/(system_ext|system/system_ext)/bin/adb_root      u:object_r:adbroot_exec:s0
+/data/adbroot(/.*)?        u:object_r:adbroot_data_file:s0
+
 # OTA packages
 #/data/xperience_updates(/.*)?           u:object_r:ota_package_file:s0
 /data/lineageos_updates(/.*)?           u:object_r:ota_package_file:s0
