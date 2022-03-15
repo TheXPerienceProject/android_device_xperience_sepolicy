@@ -26,6 +26,9 @@ allow updater_app system_data_file:dir { read };
 
 allow updater_app vendor_dpmtcm_socket:sock_file write;
 
+#TCM
+allow updater_app vendor_dpmd:unix_stream_socket { connectto };
+
 get_prop(updater_app, default_prop)
 get_prop(updater_app, build_prop)
 
