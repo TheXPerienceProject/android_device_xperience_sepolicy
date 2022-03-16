@@ -1,7 +1,7 @@
 recovery_only(`
 userdebug_or_eng(`
 permissive recovery;
-')
+`)
 
 # Volume manager
 allow recovery block_device:dir create_dir_perms;
@@ -19,4 +19,4 @@ allow recovery media_rw_data_file:dir r_dir_perms;
 r_dir_file(recovery, unencrypted_data_file)
 # Read battery percentage
 allow recovery sysfs_batteryinfo:dir search;
-')
+`)
