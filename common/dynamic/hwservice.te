@@ -1,5 +1,3 @@
-type hal_xpe_fod_hwservice, hwservice_manager_type;
-
 type hal_xpe_camera_motor_hwservice, hwservice_manager_type;
 type hal_xperience_touch_hwservice, hwservice_manager_type;
 type hal_xperience_fastcharge_hwservice, hwservice_manager_type;
