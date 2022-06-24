@@ -6,3 +6,4 @@ vendor.xperience.touch::IKeyDisabler                                      u:obje
 vendor.xperience.touch::IKeySwapper                                       u:object_r:hal_xperience_touch_hwservice:s0
 vendor.xperience.touch::IStylusMode                                       u:object_r:hal_xperience_touch_hwservice:s0
 vendor.xperience.touch::ITouchscreenGesture                               u:object_r:hal_xperience_touch_hwservice:s0
+vendor.xperience.powershare::IPowerShare                                  u:object_r:hal_xperience_powershare_hwservice:s0

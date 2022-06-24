@@ -10,6 +10,7 @@ allow system_server ota_package_file:dir { getattr search };
 # Use HALs
 hal_client_domain(system_server, hal_xperience_fastcharge)
 hal_client_domain(system_server, hal_xperience_touch)
+hal_client_domain(system_server, hal_xperience_powershare)
 
 add_service(system_server, longshot_service)
 

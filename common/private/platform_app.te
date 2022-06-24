@@ -4,3 +4,13 @@ allow platform_app nfc_service:service_manager find;
 # Allow FastCharge HAL service to be found
 hal_client_domain(platform_app, hal_xperience_fastcharge)
 
+# Allow PowerShare HAL service to be found
+hal_client_domain(platform_app, hal_xperience_powershare)
+
+# OTA
+allow platform_app { cache_file cache_recovery_file }:dir create_dir_perms;
+allow platform_app { cache_file cache_recovery_file }:file create_file_perms;
+allow platform_app cache_file:lnk_file r_file_perms;
+allow platform_app ota_package_file:file create_file_perms;
+allow platform_app ota_package_file:dir rw_dir_perms;
+allow platform_app recovery_service:service_manager find;
