@@ -1,0 +1,2 @@
+# Read battery health on 5.4 kernels 
+allow system_app vendor_sysfs_battery_supply:dir search;
