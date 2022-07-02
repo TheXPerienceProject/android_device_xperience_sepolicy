@@ -1,1 +1,1 @@
-allow fsck_untrusted sysfs:file read;
+allow fsck_untrusted sysfs:file r_file_perms;
