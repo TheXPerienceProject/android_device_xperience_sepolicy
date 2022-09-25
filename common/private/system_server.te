@@ -37,3 +37,5 @@ allow system_server pocket_judge_sysfs:file rw_file_perms;
 allow system_server webview_zygote:process setsched;
 allow system_server app_zygote:process setsched;
 
+# Linearmotor Vibrator
+add_service(system_server, linearmotor_vibrator_service);
