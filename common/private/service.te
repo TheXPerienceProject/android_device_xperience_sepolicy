@@ -9,3 +9,7 @@ type lineage_trust_service, system_api_service, system_server_service, service_m
 type lmo_freeform_service, system_api_service, system_server_service, service_manager_type;
 type xperience_optimizer_service, system_server_service, service_manager_type;
 type pocket_service, system_api_service, system_server_service, service_manager_type;
+
+# Linearmotor Vibrator
+type linearmotor_vibrator_service, system_api_service, system_server_service, service_manager_type;
+
