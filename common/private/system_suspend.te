@@ -1,2 +1,0 @@
-allow system_suspend sysfs:file read;
-

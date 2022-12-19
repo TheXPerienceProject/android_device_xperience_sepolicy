@@ -1,2 +1,0 @@
-allow shell profcollectd_data_file:dir { getattr search };
-
