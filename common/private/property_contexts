@@ -10,6 +10,12 @@ persist.vendor.camera.privapp.list     u:object_r:camera2_extensions_prop:s0
 vendor.camera.aux.packageexcludelist   u:object_r:camera2_extensions_prop:s0
 vendor.camera.aux.packagelist          u:object_r:camera2_extensions_prop:s0
 
+# Dolby Properties
+ro.vendor.dolby.dax.version            u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.dax.support      u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.dax.version      u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.surround.enable  u:object_r:exported_system_prop:s0
+
 # Custom legal URL
 ro.lineagelegal.url                    u:object_r:legal_url_prop:s0
 
