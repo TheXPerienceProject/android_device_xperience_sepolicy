@@ -26,3 +26,6 @@ add_service(system_server, dc_dimming_service);
 
 # CachedAppOptimizer
 allow system_server zygote_tmpfs:file rw_file_perms;
+
+# Lineage
+hal_client_domain(system_server, hal_lineage_health)

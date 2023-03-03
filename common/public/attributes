@@ -3,3 +3,10 @@ hal_attribute_xpe(xpe_camera_motor)
 hal_attribute_xpe(xperience_fastcharge)
 hal_attribute_xpe(xperience_touch)
 hal_attribute_xpe(xperience_powershare)
+
+attribute hal_lineage_health;
+expandattribute hal_lineage_health true;
+attribute hal_lineage_health_client;
+expandattribute hal_lineage_health_client true;
+attribute hal_lineage_health_server;
+expandattribute hal_lineage_health_server false;
