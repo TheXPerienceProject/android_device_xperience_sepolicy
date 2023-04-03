@@ -31,7 +31,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/vendor
 endif
 
-ifneq (,$(filter sdm660 , $(TARGET_BOARD_PLATFORM)))
+ifeq (,$(filter sdm660 , $(TARGET_BOARD_PLATFORM)))
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/dontaudit
 endif
