@@ -34,4 +34,6 @@ BOARD_SEPOLICY_M4DEFS += \
     sysfs_graphics=vendor_sysfs_graphics \
     sysfs_kgsl=vendor_sysfs_kgsl \
     sysfs_scsi_host=vendor_sysfs_scsi_host \
+    sysfs_socinfo_sensitive=vendor_sysfs_soc_sensitive \
+    sysfs_usb_supply=vendor_sysfs_usb_supply
 endif
