@@ -29,12 +29,14 @@ else
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/dynamic \
     device/xperience/sepolicy/common/vendor
-endif
 
 ifeq (,$(filter sdm660 , $(TARGET_BOARD_PLATFORM)))
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/dontaudit
 endif
+endif
+
+
 
 # Selectively include legacy rules defined by the products
 -include device/xperience/sepolicy/legacy-common/sepolicy.mk
