@@ -1,1 +1,1 @@
-allow iorap_prefetcherd resourcecache_data_file:dir r_file_perms;
+#allow iorap_prefetcherd resourcecache_data_file:dir r_file_perms;

@@ -1,6 +1,6 @@
-ifelse(board_excludes_fuseblk_sepolicy, `true', ,
-genfscon fuseblk / u:object_r:vfat:s0
-)
+#ifelse(board_excludes_fuseblk_sepolicy, `true', ,
+#genfscon fuseblk / u:object_r:vfat:s0
+#)
 
 genfscon sysfs /devices/virtual/timed_output/vibrator u:object_r:sysfs_vibrator:s0
 genfscon proc  /sys/vm/dirty_background_bytes u:object_r:proc_min_free_order_shift:s0
