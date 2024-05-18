@@ -1,2 +1,5 @@
 # lmkd properties
 vendor_restricted_prop(vendor_lmkd_prop);
+
+# FM Radio app
+vendor_public_prop(vendor_fm_radio_app_prop);
