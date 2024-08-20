@@ -1,3 +1,7 @@
+#AUX CAMERA
+vendor.camera.skip_unconfigure.packagelist  u:object_r:vendor_persist_camera_prop:s0
+vendor.camera.aux.packageexcludelist   u:object_r:vendor_persist_camera_prop:s0
+
 adb.secure                    u:object_r:recovery_prop:s0
 lineage.userinit.active       u:object_r:userinit_prop:s0
 xperience.userinit.active       u:object_r:userinit_prop:s0

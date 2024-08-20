@@ -32,3 +32,6 @@ hal_client_domain(system_server, hal_lineage_health)
 
 # App Lock
 add_service(system_server, applock_service);
+
+# Freeform
+add_service(system_server, lmo_freeform_service);
