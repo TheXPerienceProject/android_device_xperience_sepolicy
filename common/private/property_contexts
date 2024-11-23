@@ -15,6 +15,15 @@ persist.lineage.health.                u:object_r:lineage_health_prop:s0
 # Radio
 ro.telephony.use_old_mnc_mcc_format    u:object_r:telephony_config_prop:s0
 
+# Recovery battery
+ro.recovery.batteryless                u:object_r:recovery_config_prop:s0 exact bool
+
+# Recovery filesystem
+ro.recovery.supported_fs               u:object_r:recovery_config_prop:s0 exact string
+
+# Recovery touch
+ro.minui.default_touch_rotation        u:object_r:recovery_config_prop:s0
+
 # Recovery update
 #persist.vendor.recovery_update         u:object_r:recovery_update_prop:s0
 
