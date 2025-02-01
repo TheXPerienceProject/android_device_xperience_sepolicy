@@ -10,3 +10,5 @@ hal_client_domain(system_app, hal_xperience_fastcharge)
 # LineageHardware
 allow system_app default_android_service:service_manager find;
 
+# logd fix crash dev settings
+allow system_app logpersistd_logging_prop:file read;
