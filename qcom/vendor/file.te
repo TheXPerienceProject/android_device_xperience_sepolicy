@@ -1,2 +1,4 @@
 #Sysfs Kcal
 type sysfs_kcal, fs_type, sysfs_type;
+
+type sysfs_socinfo_sensitive, fs_type, sysfs_type;
