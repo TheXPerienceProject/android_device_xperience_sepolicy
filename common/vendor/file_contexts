@@ -1,3 +1,8 @@
+# FEAS - perf
+/sys//module/perfmgr                                                            u:object_r:sysfs_perfmgr:s0
+/proc/perfmgr(/.*)?                                                             u:object_r:proc_perfmgr:s0
+/proc/perfmgr/perf_ioctl                                                        u:object_r:proc_perfmgr:s0
+
 # Fingerprint HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service u:object_r:hal_fingerprint_default_exec:s0
 
@@ -18,3 +23,4 @@
 
 # Health HAL
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.health-service\.default     u:object_r:hal_lineage_health_default_exec:s0
+
