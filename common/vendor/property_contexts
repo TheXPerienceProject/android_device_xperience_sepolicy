@@ -1,3 +1,6 @@
+# Camera IDs remapping
+vendor.camera.remapid                  u:object_r:vendor_camera_remapid_prop:s0
+
 # lmkd properties
 ro.vendor.lmk.             u:object_r:vendor_lmkd_prop:s0
 

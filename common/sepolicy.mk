@@ -36,7 +36,5 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
 endif
 endif
 
-
-
 # Selectively include legacy rules defined by the products
 -include device/xperience/sepolicy/legacy-common/sepolicy.mk

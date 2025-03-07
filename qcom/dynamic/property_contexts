@@ -1,6 +1,6 @@
 # Audio
-audio.                            u:object_r:audio_prop:s0
-persist.speaker.                  u:object_r:audio_prop:s0
+#audio.                            u:object_r:audio_prop:s0
+#persist.speaker.                  u:object_r:audio_prop:s0
 
 # custom xperience 
 # post boot properties
@@ -18,5 +18,5 @@ persist.speaker.                  u:object_r:audio_prop:s0
 #ro.use_psi                u:object_r:vendor_mpctl_prop:s0
 #ro.lmk.debug                u:object_r:vendor_mpctl_prop:s0
 #ro.xperience.kernel.uses.lmkd                u:object_r:vendor_mpctl_prop:s0
-vendor.xperience.post_boot.parsed                u:object_r:vendor_mpctl_prop:s0
-vendor.xperience.easkernelversion                u:object_r:vendor_mpctl_prop:s0
+#vendor.xperience.post_boot.parsed                u:object_r:vendor_mpctl_prop:s0
+#vendor.xperience.easkernelversion                u:object_r:vendor_mpctl_prop:s0
