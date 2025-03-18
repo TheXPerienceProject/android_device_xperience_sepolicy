@@ -1,5 +1,5 @@
 # FEAS - perf
-/sys//module/perfmgr                                                            u:object_r:sysfs_perfmgr:s0
+/sys/module/perfmgr                                                            u:object_r:sysfs_perfmgr:s0
 /proc/perfmgr(/.*)?                                                             u:object_r:proc_perfmgr:s0
 /proc/perfmgr/perf_ioctl                                                        u:object_r:proc_perfmgr:s0
 
