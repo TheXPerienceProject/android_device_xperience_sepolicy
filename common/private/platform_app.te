@@ -50,3 +50,6 @@ allow platform_app sysfs_zram:file r_file_perms;
 # allow systemui to set boot animation colors
 get_prop(platform_app, bootanim_system_prop)
 set_prop(platform_app, bootanim_system_prop)
+
+# Compact HUN	
+allow platform_app system_prop:property_service set;
