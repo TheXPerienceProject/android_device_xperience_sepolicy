@@ -29,3 +29,5 @@ get_prop(system_app, qemu_hw_prop)
 # Read XPerience informational properties
 get_prop(system_app, xperience_info_prop)
 
+# Compact HUN
+allow system_app system_prop:property_service set;
