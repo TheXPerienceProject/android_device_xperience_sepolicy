@@ -33,3 +33,6 @@ persist.bootanim.color1     u:object_r:bootanim_system_prop:s0
 persist.bootanim.color2     u:object_r:bootanim_system_prop:s0
 persist.bootanim.color3     u:object_r:bootanim_system_prop:s0
 persist.bootanim.color4     u:object_r:bootanim_system_prop:s0
+
+# USB
+ro.usb.uvc.disable_video_encode_flag   u:object_r:usb_uvc_config_prop:s0
