@@ -17,6 +17,7 @@ ro.lineage.version                     u:object_r:custom_version_prop:s0
 ro.lineage.display.version             u:object_r:custom_version_prop:s0
 ro.lineage.build.version               u:object_r:custom_version_prop:s0
 ro.lineage.releasetype                 u:object_r:custom_version_prop:s0
+ro.lineage.device                      u:object_r:custom_version_prop:s0
 
 # NFC
 persist.vendor.nfc.config_file_name    u:object_r:vendor_persist_nfc_prop:s0 exact string
