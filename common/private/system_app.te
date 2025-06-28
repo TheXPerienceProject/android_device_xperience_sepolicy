@@ -8,10 +8,13 @@ hal_client_domain(system_app, hal_xperience_touch)
 hal_client_domain(system_app, hal_xperience_fastcharge)
 
 # LineageHardware
-allow system_app default_android_service:service_manager find;
+#allow system_app default_android_service:service_manager find;
 
 # logd fix crash dev settings
 allow system_app logpersistd_logging_prop:file read;
 
 # Allow Settings to read ro.vendor.build.security_patch
 get_prop(system_app, vendor_security_patch_level_prop)
+
+# Allow Settings to read default navbar prop
+get_prop(system_app, qemu_hw_prop)
