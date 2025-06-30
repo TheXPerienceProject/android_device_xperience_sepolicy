@@ -1,0 +1,2 @@
+#Allow AIDL base perf-hal communication
+binder_call(vendor_hal_perf_server, servicemanager)
