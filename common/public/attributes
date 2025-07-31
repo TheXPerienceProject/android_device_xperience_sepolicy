@@ -3,6 +3,7 @@ hal_attribute_xpe(xpe_camera_motor)
 hal_attribute_xpe(xperience_fastcharge)
 hal_attribute_xpe(xperience_touch)
 hal_attribute_xpe(xperience_powershare)
+hal_attribute_xpe(lineage_powershare)
 
 attribute hal_lineage_health;
 expandattribute hal_lineage_health true;

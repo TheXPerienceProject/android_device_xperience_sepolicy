@@ -12,6 +12,8 @@ allow system_server ota_package_file:dir { getattr search };
 hal_client_domain(system_server, hal_xperience_fastcharge)
 hal_client_domain(system_server, hal_xperience_touch)
 hal_client_domain(system_server, hal_xperience_powershare)
+hal_client_domain(system_server, hal_lineage_health)
+hal_client_domain(system_server, hal_lineage_powershare)
 
 # Let system server find lineage health properties
 get_prop(system_server, lineage_health_prop)
