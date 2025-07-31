@@ -1,3 +1,6 @@
 type recovery_prop, property_type;
 type userinit_prop, property_type;
 type recovery_update_prop, property_type, extended_core_property_type;
+
+# Lineage Health
+system_internal_prop(lineage_health_prop)

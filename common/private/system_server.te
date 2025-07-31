@@ -13,6 +13,9 @@ hal_client_domain(system_server, hal_xperience_fastcharge)
 hal_client_domain(system_server, hal_xperience_touch)
 hal_client_domain(system_server, hal_xperience_powershare)
 
+# Let system server find lineage health properties
+get_prop(system_server, lineage_health_prop)
+
 #add_service(system_server, longshot_service)
 
 allow system_server adbroot_service:service_manager find;
