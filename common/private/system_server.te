@@ -8,6 +8,10 @@ allow system_server media_rw_data_file:file r_file_perms;
 # OTA with encrypted/unencrypted f2fs
 allow system_server ota_package_file:dir { getattr search };
 
+# CachedAppOptimizer
+allow system_server tmpfs:file rw_file_perms;
+allow system_server zygote_tmpfs:file rw_file_perms;
+
 # Use HALs
 hal_client_domain(system_server, hal_xperience_fastcharge)
 hal_client_domain(system_server, hal_xperience_touch)
