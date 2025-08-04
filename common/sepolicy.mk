@@ -34,6 +34,12 @@ ifeq (,$(filter sdm660 , $(TARGET_BOARD_PLATFORM)))
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/dontaudit
 endif
+
+ifeq ($(filter pineapple,$(TARGET_BOARD_PLATFORM)),)
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/xperience/sepolicy/common/perf2_legacy
+endif
+
 endif
 
 # Selectively include legacy rules defined by the products
