@@ -5,3 +5,6 @@ allow system_server vendor_sysfs_battery_supply:file r_file_perms;
 
 # Smart charging
 allow system_server sysfs_battery_supply:file { getattr open write };
+
+# usb HDMi
+allow system_server sysfs:file r_file_perms;
