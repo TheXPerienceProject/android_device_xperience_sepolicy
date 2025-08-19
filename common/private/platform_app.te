@@ -11,6 +11,9 @@ hal_client_domain(platform_app, hal_lineage_powershare)
 r_dir_file(platform_app, config_gz)
 r_dir_file(platform_app, sysfs_zram)
 
+# Allow systemui to read thermal for CPUInfo
+r_dir_file(platform_app, sysfs_thermal)
+
 # Access zram sysfs
 allow platform_app sysfs_zram:dir r_dir_perms;
 allow platform_app sysfs_zram:file r_file_perms;
