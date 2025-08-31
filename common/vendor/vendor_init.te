@@ -6,3 +6,7 @@ set_prop(vendor_init, vendor_persist_nfc_prop)
 
 # To write to VM nodes
 allow vendor_init proc_dirty:file w_file_perms;
+
+#
+allow vendor_init default_prop:property_service set;
+set_prop(vendor_init, default_prop);
