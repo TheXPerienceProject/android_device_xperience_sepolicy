@@ -16,6 +16,7 @@ set_prop(system_app, recovery_update_prop)
 
 # xperience optimizer
 allow system_app proc_pid_max:file r_file_perms;
+allow system_app proc_stat:file r_file_perms;
 allow system_app servicemanager:file r_file_perms;
 allow system_app hwservicemanager:file r_file_perms;
 allow system_app vndservicemanager:file r_file_perms;
