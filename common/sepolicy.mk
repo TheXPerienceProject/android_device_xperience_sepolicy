@@ -61,3 +61,4 @@ endif
 
 # Selectively include legacy rules defined by the products
 -include device/xperience/sepolicy/legacy-common/sepolicy.mk
+-include packages/apps/GameSpace/sepolicy/SEPolicy.mk
