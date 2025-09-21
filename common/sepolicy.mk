@@ -43,6 +43,10 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS+= \
     device/xperience/sepolicy/common/perf2_legacy_private
 endif
 
+ifeq ($(TARGET_BOARD_PLATFORM),lahaina)
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/xperience/sepolicy/common/perf2_lahaina
+endif
 endif
 
 # Selectively include legacy rules defined by the products
