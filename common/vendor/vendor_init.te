@@ -9,3 +9,6 @@ allow vendor_init proc_dirty:file w_file_perms;
 #
 allow vendor_init default_prop:property_service set;
 set_prop(vendor_init, default_prop);
+
+# Sched tune
+allow vendor_init device:file create;

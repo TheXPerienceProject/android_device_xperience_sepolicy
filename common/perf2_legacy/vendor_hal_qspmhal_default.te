@@ -1,0 +1,5 @@
+# Allow qspmhal to connect to tombstoned crash socket
+allow vendor_hal_qspmhal_default tombstoned:unix_stream_socket connectto;
+
+# Allow qspmhal to read default properties
+allow vendor_hal_qspmhal_default default_prop:file { open read getattr map };

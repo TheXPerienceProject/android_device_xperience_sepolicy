@@ -38,3 +38,6 @@ set_prop(platform_app, bootanim_system_prop)
 
 # allow lineage settings
 allow platform_app zygote:unix_stream_socket getopt;
+
+#dynamic island
+allow platform_app system_prop:property_service set;
