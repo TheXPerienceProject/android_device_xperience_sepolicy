@@ -56,3 +56,6 @@ allow platform_app system_prop:property_service set;
 # Access zram sysfs
 allow platform_app sysfs_zram:dir r_dir_perms;
 allow platform_app sysfs_zram:file r_file_perms;
+
+# allow lineage settings
+allow platform_app zygote:unix_stream_socket getopt;
