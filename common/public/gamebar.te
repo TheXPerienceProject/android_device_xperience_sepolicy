@@ -1,0 +1,2 @@
+type gamebar, domain;
+typeattribute gamebar mlstrustedsubject;
