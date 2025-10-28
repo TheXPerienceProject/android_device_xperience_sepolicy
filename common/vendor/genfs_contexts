@@ -1,6 +1,3 @@
-# for battery nodes on GameBar
-genfscon sysfs /class/power_supply/battery/temp u:object_r:vendor_sysfs_battery_supply:s0
-
 # FEAS
 genfscon sysfs /module/perfmgr                                                                                                      u:object_r:sysfs_perfmgr:s0
 genfscon proc /perfmgr                                                                                                              u:object_r:proc_perfmgr:s0
