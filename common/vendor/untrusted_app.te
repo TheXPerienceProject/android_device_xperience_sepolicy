@@ -1,3 +1,0 @@
-# allow to read AlgoBrige on our ApertureOplus the cam wants to
-# open libAlgoProcess
-allow untrusted_app vendor_file:file r_file_perms;
