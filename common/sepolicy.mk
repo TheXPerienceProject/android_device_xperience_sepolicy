@@ -35,7 +35,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/dontaudit
 endif
 
-ifeq ($(filter pineapple,$(TARGET_BOARD_PLATFORM)),)
+$(warning "No es una plataforma legacy ")
+ifeq ($(filter $(UM_6_1_FAMILY) $(UM_6_6_FAMILY) ,$(TARGET_BOARD_PLATFORM)),)
+$(warning "Es una plataforma legacy ")
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/perf2_legacy
 
