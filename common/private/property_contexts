@@ -12,6 +12,10 @@ recovery.perf.mode            u:object_r:recovery_prop:s0
 # Lineage Health
 persist.lineage.health.                u:object_r:lineage_health_prop:s0
 
+# NFC
+persist.vendor.nfc.config_file_name    u:object_r:vendor_persist_nfc_prop:s0 exact string
+persist.vendor.nfc.fw_file_name        u:object_r:vendor_persist_nfc_prop:s0 exact string
+
 # Recovery battery
 ro.recovery.batteryless                u:object_r:recovery_config_prop:s0 exact bool
 
