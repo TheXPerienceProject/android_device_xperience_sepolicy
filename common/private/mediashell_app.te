@@ -2,9 +2,9 @@
 
 type mediashell_app, domain, coredomain;
 
-app_domain(mediashell_app);
-net_domain(mediashell_app);
-bluetooth_domain(mediashell_app);
+app_domain(mediashell_app)
+net_domain(mediashell_app)
+bluetooth_domain(mediashell_app)
 
 # Find services that expose both @SystemAPI and normal APIs.
 allow mediashell_app app_api_service:service_manager find;
