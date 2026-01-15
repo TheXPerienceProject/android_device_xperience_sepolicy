@@ -1,0 +1,4 @@
+allow updater_app vendor_dpmtcm_socket:sock_file write;
+
+#TCM
+allow updater_app vendor_dpmd:unix_stream_socket { connectto };

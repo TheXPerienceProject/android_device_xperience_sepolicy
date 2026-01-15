@@ -21,6 +21,16 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/private
 
+# those are for qcom only
+ifeq ($(filter mt%,$(TARGET_BOARD_PLATFORM)),)
+$(warning "It's QCOM ")
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+    device/xperience/sepolicy/common/private_qcom
+
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/xperience/sepolicy/common/vendor_qcom
+endif
+
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/dynamic \
@@ -30,14 +40,12 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/dynamic \
     device/xperience/sepolicy/common/vendor
 
-ifeq (,$(filter sdm660 , $(TARGET_BOARD_PLATFORM)))
+ifeq (,$(filter sdm660 mt%, $(TARGET_BOARD_PLATFORM)))
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/dontaudit
 endif
 
-$(warning "No es una plataforma legacy ")
-ifeq ($(filter $(UM_6_1_FAMILY) $(UM_6_6_FAMILY) ,$(TARGET_BOARD_PLATFORM)),)
-$(warning "Es una plataforma legacy ")
+ifeq ($(filter mt% $(UM_6_1_FAMILY) $(UM_6_6_FAMILY) ,$(TARGET_BOARD_PLATFORM)),)
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/perf2_legacy
 

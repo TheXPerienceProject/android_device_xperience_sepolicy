@@ -1,5 +1,3 @@
-allow init sysfs_battery_supply:file { setattr };
-
 recovery_only(`
   allow init self:capability sys_module;
   allow init rootfs:system module_load;
