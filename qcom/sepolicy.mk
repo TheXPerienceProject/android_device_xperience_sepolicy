@@ -29,6 +29,7 @@ endif
 
 ifeq (,$(filter msm8960 msm8226 msm8610 msm8974 apq8084 msm8909 msm8916 msm8952 msm8992 msm8994 msm8937 msm8953 msm8996 msm8998 sdm660 sdm710 sdm845, $(TARGET_BOARD_PLATFORM)))
 BOARD_SEPOLICY_M4DEFS += \
+    custom_ab_block_device=vendor_custom_ab_block_device \
     display_vendor_data_file=vendor_display_vendor_data_file \
     hal_gnss_qti=vendor_hal_gnss_qti \
     hal_perf_default=vendor_hal_perf_default \
