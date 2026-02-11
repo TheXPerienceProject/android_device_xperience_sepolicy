@@ -1,6 +1,3 @@
-# Aux camera allow/excludelist prop
-system_vendor_config_prop(vendor_persist_camera_prop)
-
 # NFC
 system_vendor_config_prop(vendor_persist_nfc_prop)
 
