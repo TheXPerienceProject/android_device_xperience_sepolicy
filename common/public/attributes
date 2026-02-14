@@ -4,3 +4,7 @@ hal_attribute_lineage(lineage_livedisplay)
 hal_attribute_lineage(lineage_touch)
 hal_attribute_lineage(lineage_trust)
 hal_attribute_lineage(lineage_powershare)
+
+# xpe
+hal_attribute_xperience(xperience_touch)
+hal_attribute_xperience(xperience_powershare)
