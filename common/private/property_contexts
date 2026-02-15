@@ -71,3 +71,17 @@ persist.sys.global.cleartext           u:object_r:system_exported_cleartext_prop
 
 # Compact HUN
 persist.sys.compact_heads_up_notification.always_show          u:object_r:system_prop:s0
+
+# XPerience
+ro.device.front_cam                        u:object_r:exported_system_prop:s0
+ro.device.rear_cam                         u:object_r:exported_system_prop:s0
+ro.xpe.chipset                             u:object_r:exported_system_prop:s0
+ro.xpe.version                             u:object_r:custom_version_prop:s0
+ro.xpe.display.version                     u:object_r:custom_version_prop:s0
+ro.xpe.build.version                       u:object_r:custom_version_prop:s0
+ro.xpe.releasetype                         u:object_r:custom_version_prop:s0
+ro.xperience.version                       u:object_r:custom_version_prop:s0
+ro.xperience.display.version               u:object_r:custom_version_prop:s0
+ro.xperience.build.version                 u:object_r:custom_version_prop:s0
+ro.xperience.releasetype                   u:object_r:custom_version_prop:s0
+
