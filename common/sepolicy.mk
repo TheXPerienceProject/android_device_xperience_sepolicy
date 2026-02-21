@@ -29,3 +29,10 @@ endif
 ifeq ($(PRODUCT_IS_ATV), true)
 include device/xperience/sepolicy/atv/sepolicy.mk
 endif
+
+ifeq ($(filter xperience_sdk_%,$(TARGET_PRODUCT)),)
+include packages/apps/GameSpace/sepolicy/SEPolicy.mk
+else
+$(warning GameSpace sepolicy disabled for $(TARGET_PRODUCT))
+
+endif
