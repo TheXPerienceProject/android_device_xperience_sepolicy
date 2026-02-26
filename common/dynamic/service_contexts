@@ -17,3 +17,10 @@ vendor.lineage.touch.IKeyDisabler/default                      u:object_r:hal_li
 vendor.lineage.touch.IKeySwapper/default                       u:object_r:hal_lineage_touch_service:s0
 vendor.lineage.touch.IStylusMode/default                       u:object_r:hal_lineage_touch_service:s0
 vendor.lineage.touch.ITouchscreenGesture/default               u:object_r:hal_lineage_touch_service:s0
+
+vendor.xperience.touch::IGloveMode                                        u:object_r:hal_lineage_touch_service:s0
+vendor.xperience.touch::IHighTouchPollingRate                             u:object_r:hal_lineage_touch_service:s0
+vendor.xperience.touch::IKeyDisabler                                      u:object_r:hal_lineage_touch_service:s0
+vendor.xperience.touch::IKeySwapper                                       u:object_r:hal_lineage_touch_service:s0
+vendor.xperience.touch::IStylusMode                                       u:object_r:hal_lineage_touch_service:s0
+vendor.xperience.touch::ITouchscreenGesture                               u:object_r:hal_lineage_touch_service:s0
