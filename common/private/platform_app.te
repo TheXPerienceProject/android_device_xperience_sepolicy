@@ -53,3 +53,6 @@ set_prop(platform_app, bootanim_system_prop)
 
 # Compact HUN	
 allow platform_app system_prop:property_service set;
+
+# uvc
+allow platform_app usb_uvc_enabled_prop:file r_file_perms;
