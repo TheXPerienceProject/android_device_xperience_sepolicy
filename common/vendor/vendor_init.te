@@ -10,3 +10,6 @@ allow vendor_init proc_dirty:file w_file_perms;
 #
 allow vendor_init default_prop:property_service set;
 set_prop(vendor_init, default_prop);
+
+# Camera IDs remapping
+set_prop(vendor_init, vendor_camera_remapid_prop)
