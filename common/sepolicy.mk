@@ -15,6 +15,17 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/private
 
+ifeq ($(filter tokay caiman komodo comet tegu frankel blazer mustang rango, $(XPERIENCE_BUILD)),)
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+    device/lineage/sepolicy/mosey/system_ext/public
+
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+    device/lineage/sepolicy/mosey/system_ext/private
+
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/lineage/sepolicy/mosey/vendor
+endif
+
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/dynamic \
