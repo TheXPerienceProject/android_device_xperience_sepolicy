@@ -1,2 +1,5 @@
 # Trust
 get_prop(system_server, vendor_security_patch_level_prop)
+
+# XPerienceIntelligenceOptimizer (XIO)
+allow system_server sysfs_xio_compute:file rw_file_perms;
