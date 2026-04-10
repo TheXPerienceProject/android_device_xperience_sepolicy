@@ -30,6 +30,11 @@ ifeq ($(PRODUCT_IS_ATV), true)
 include device/xperience/sepolicy/atv/sepolicy.mk
 endif
 
+ifeq ($(TARGET_BOARD_PLATFORM),lahaina)
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/xperience/sepolicy/common/lahaina
+endif
+
 ifeq ($(filter xperience_sdk_%,$(TARGET_PRODUCT)),)
 include packages/apps/GameSpace/sepolicy/SEPolicy.mk
 else
