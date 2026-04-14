@@ -24,10 +24,10 @@
 /sys/kernel/pocket_judge(/.*)?	u:object_r:pocket_judge_sysfs:s0
 
 # TrickyStore
-/data/adb/tricky_store(/.*)?                      u:object_r:trickystore_data_file:s0
+/data/system/tricky_store(/.*)?                   u:object_r:trickystore_data_file:s0
 
 # PlayIntegrityFix
-/data/adb/playintegrityfix(/.*)?                  u:object_r:pif_data_file:s0
+/data/system/playintegrityfix(/.*)?               u:object_r:pif_data_file:s0
 
 # GameProps
-/data/adb/gameprops(/.*)?                         u:object_r:gameprops_data_file:s0
+/data/system/gameprops(/.*)?                      u:object_r:gameprops_data_file:s0

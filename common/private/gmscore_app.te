@@ -1,3 +1,18 @@
 allow gmscore_app system_data_file:file r_file_perms;
 
 set_prop(gmscore_app, system_prop)
+
+# TrickyStore
+allow gmscore_app trickystore_data_file:dir { open read search getattr watch };
+allow gmscore_app trickystore_data_file:file { open read getattr };
+
+# PlayIntegrityFix
+allow gmscore_app pif_data_file:dir { open read search getattr watch };
+allow gmscore_app pif_data_file:file { open read getattr };
+
+# GameProps
+allow gmscore_app gameprops_data_file:dir { open read search getattr watch };
+allow gmscore_app gameprops_data_file:file { open read getattr };
+
+# Custom ROM Hide
+allow gmscore_app custom_rom_hide_data_file:file { open read getattr };
