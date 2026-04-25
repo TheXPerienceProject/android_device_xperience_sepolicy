@@ -34,15 +34,3 @@ allow system_app selinuxfs:file r_file_perms;
 
 # Compact HUN
 allow system_app system_prop:property_service set;
-
-# TrickyStore
-allow system_app trickystore_data_file:dir { create open read write add_name remove_name search getattr };
-allow system_app trickystore_data_file:file { create open read write getattr setattr unlink };
-
-# PlayIntegrityFix - AxionParts
-allow system_app pif_data_file:dir { create open read write add_name remove_name search getattr };
-allow system_app pif_data_file:file { create open read write getattr setattr unlink };
-
-# GameProps - AxionParts
-allow system_app gameprops_data_file:dir { create open read write add_name remove_name search getattr };
-allow system_app gameprops_data_file:file { create open read write getattr setattr unlink };

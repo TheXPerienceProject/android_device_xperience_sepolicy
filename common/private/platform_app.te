@@ -56,15 +56,3 @@ allow platform_app system_prop:property_service set;
 
 # uvc
 allow platform_app usb_uvc_enabled_prop:file r_file_perms;
-
-# TrickyStore
-allow platform_app trickystore_data_file:dir { create open read write add_name remove_name search getattr };
-allow platform_app trickystore_data_file:file { create open read write getattr setattr unlink };
-
-# PlayIntegrityFix - AxionParts
-allow platform_app pif_data_file:dir { create open read write add_name remove_name search getattr };
-allow platform_app pif_data_file:file { create open read write getattr setattr unlink };
-
-# GameProps - AxionParts
-allow platform_app gameprops_data_file:dir { create open read write add_name remove_name search getattr };
-allow platform_app gameprops_data_file:file { create open read write getattr setattr unlink };

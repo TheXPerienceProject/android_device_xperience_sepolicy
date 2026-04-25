@@ -23,11 +23,3 @@
 # Pocket judge
 /sys/kernel/pocket_judge(/.*)?	u:object_r:pocket_judge_sysfs:s0
 
-# TrickyStore
-/data/system/tricky_store(/.*)?                   u:object_r:trickystore_data_file:s0
-
-# PlayIntegrityFix
-/data/system/playintegrityfix(/.*)?               u:object_r:pif_data_file:s0
-
-# GameProps
-/data/system/gameprops(/.*)?                      u:object_r:gameprops_data_file:s0
