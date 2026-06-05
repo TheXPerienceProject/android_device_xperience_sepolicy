@@ -1,3 +1,7 @@
 r_dir_file(hal_perf_default, hal_power_default)
 
 rw_dir_file(hal_perf_default, proc_sched)
+
+# Allow perf to read cmdline
+allow vendor_hal_perf_default system_server:dir search;
+allow vendor_hal_perf_default system_server:file r_file_perms;

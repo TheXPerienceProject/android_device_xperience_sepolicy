@@ -30,3 +30,6 @@ get_prop(updater_app, default_prop)
 get_prop(updater_app, build_prop)
 
 set_prop(updater_app, recovery_update_prop)
+
+get_prop(updater_app, aac_drc_prop)
+get_prop(updater_app, ab_update_gki_prop)

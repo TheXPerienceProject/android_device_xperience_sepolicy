@@ -1,1 +1,4 @@
 hal_client_domain(platform_app, vendor_hal_soter)
+
+get_prop(platform_app, custom_version_prop)
+get_prop(platform_app, aac_drc_prop)
