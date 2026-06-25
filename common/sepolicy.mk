@@ -46,6 +46,12 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xperience/sepolicy/common/lahaina
 endif
 
+# FEAS 
+ifeq ($(filter mt%,$(TARGET_BOARD_PLATFORM)),)
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/xperience/sepolicy/common/feas
+endif
+
 ifeq ($(filter xperience_sdk_%,$(TARGET_PRODUCT)),)
 include packages/apps/GameSpace/sepolicy/SEPolicy.mk
 else
