@@ -22,8 +22,6 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/xperience/sepolicy/mosey/system_ext/private
 
-BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/xperience/sepolicy/mosey/vendor
 endif
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
