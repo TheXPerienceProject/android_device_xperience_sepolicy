@@ -37,3 +37,6 @@ allow system_server pocket_judge_sysfs:file rw_file_perms;
 allow system_server webview_zygote:process setsched;
 allow system_server app_zygote:process setsched;
 
+# xperience optimizer
+add_service(system_server, optimizer_service)
+allow system_server optimizer_service:service_manager { add find };
