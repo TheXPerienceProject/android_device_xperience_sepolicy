@@ -39,3 +39,7 @@ allow system_server app_zygote:process setsched;
 
 # Linearmotor Vibrator
 add_service(system_server, linearmotor_vibrator_service);
+
+# xperience optimizer
+add_service(system_server, optimizer_service)
+allow system_server optimizer_service:service_manager { add find };
