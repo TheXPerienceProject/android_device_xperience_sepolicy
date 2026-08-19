@@ -1,0 +1,1 @@
+allow hal_power_default sysfs_xio_compute:file rw_file_perms;
