@@ -13,3 +13,10 @@ hal_client_domain(system_app, hal_lineage_touch)
 
 # Allow SetupWizard to set recovery update prop
 set_prop(system_app, recovery_update_prop)
+
+# XPerience Optimizer Binder service
+allow system_app xperience_optimizer_service:service_manager find;
+
+# XPerience Optimizer
+allow system_app proc_pid_max:file r_file_perms;
+allow system_app proc_stat:file r_file_perms;
