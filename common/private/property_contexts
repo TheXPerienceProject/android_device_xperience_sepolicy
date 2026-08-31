@@ -57,3 +57,20 @@ persist.sysui.disable_mirroring_confirmation_dialog u:object_r:hdmi_config_prop:
 # USB
 ro.usb.uvc.disable_video_encode_flag   u:object_r:usb_uvc_config_prop:s0
 vendor.usb.uvc.payload_transfer_size   u:object_r:usb_uvc_config_prop:s0
+
+# XPerience device information
+ro.device.front_cam    u:object_r:xperience_info_prop:s0 exact string
+ro.device.rear_cam     u:object_r:xperience_info_prop:s0 exact string
+ro.xpe.chipset         u:object_r:xperience_info_prop:s0 exact string
+
+ro.xpe.version                  u:object_r:custom_version_prop:s0
+ro.xpe.display.version          u:object_r:custom_version_prop:s0
+ro.xpe.build.version            u:object_r:custom_version_prop:s0
+ro.xpe.releasetype              u:object_r:custom_version_prop:s0
+
+ro.xperience.version            u:object_r:custom_version_prop:s0
+ro.xperience.display.version    u:object_r:custom_version_prop:s0
+ro.xperience.build.version      u:object_r:custom_version_prop:s0
+ro.xperience.releasetype        u:object_r:custom_version_prop:s0
+
+

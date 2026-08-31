@@ -25,3 +25,7 @@ get_prop(system_app, incremental_prop)
 
 # Allow Settings to read default navbar prop
 get_prop(system_app, qemu_hw_prop)
+
+# Read XPerience informational properties
+get_prop(system_app, xperience_info_prop)
+
