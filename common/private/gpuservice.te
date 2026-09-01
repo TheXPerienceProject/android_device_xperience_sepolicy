@@ -1,0 +1,2 @@
+# Allow GPU service to query GPU BPF map metadata.
+allow gpuservice fs_bpf:file { read write getattr };
