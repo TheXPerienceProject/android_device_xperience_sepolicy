@@ -13,3 +13,6 @@ allow hal_power_default fwk_stats_service:service_manager find;
 hal_client_domain(hal_power_default, hal_thermal)
 
 binder_call(hal_power_default, stats_service_server);
+
+# Allow PowerHAL to perform inference and write to the frequency nodes
+allow hal_power_default sysfs_xio_compute:file rw_file_perms;

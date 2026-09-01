@@ -42,3 +42,4 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.legacy       u:object_r:hal_vibrator_default_exec:s0
 
 /data/system/xio_telemetry\.csv  u:object_r:system_data_file:s0
+/sys/devices/system/cpu/cpufreq/policy[0-9]+/scaling_min_freq    u:object_r:sysfs_xio_compute:s0
