@@ -34,3 +34,7 @@ allow system_app system_prop:property_service set;
 
 # Read selinux status
 allow system_app selinuxfs:file r_file_perms;
+
+# bypass charge
+allow system_app sysfs_batteryinfo:dir search;
+allow system_app sysfs_batteryinfo:file rw_file_perms;
