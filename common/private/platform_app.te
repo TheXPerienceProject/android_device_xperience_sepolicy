@@ -23,3 +23,7 @@ allow platform_app sysfs_zram:file r_file_perms;
 
 # Compact HUN	
 allow platform_app system_prop:property_service set;
+
+# bypass charge
+allow platform_app sysfs_batteryinfo:dir search;
+allow platform_app sysfs_batteryinfo:file rw_file_perms;
